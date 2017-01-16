@@ -1,0 +1,13 @@
+{
+    "env": {
+        "node": true
+    },
+    "globals": {
+        "process": false,
+        "require": false,
+        "autoprefixer": true
+    },
+    "rules": {
+        "vars-on-top": "off"
+    }
+}

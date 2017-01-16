@@ -1,0 +1,32 @@
+{
+  "name": "skribble-utils",
+  "version": "1.0.0",
+  "description": "CMWN Skribble Utils",
+  "scripts": {
+    "start": "webpack-dev-server --progress --inline --hot"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "lodash": "^4.14.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.13.1",
+    "eslint-plugin-babel": "^4.0.0",
+    "eslint-plugin-react": "^6.9.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-eslint": "^2.0.0",
+    "gulp-inject": "^3.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "json-loader": "^0.5.4",
+    "webpack": "^1.12.2",
+    "yargs": "^3.31.0"
+  },
+  "author": "Adam \"Professor Walzy\" Walzer, Chuck \"MANCHUCK\" Reeves",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ginasink/skribble-utils.git"
+  }
+}
