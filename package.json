@@ -23,6 +23,7 @@
     "mocha": "^3.2.0",
     "webpack": "^1.12.2"
   },
+  "main": "library/skribble/utils.js",
   "author": "Adam \"Professor Walzy\" Walzer, Chuck \"MANCHUCK\" Reeves",
   "license": "ISC",
   "repository": {
