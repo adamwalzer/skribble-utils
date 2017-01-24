@@ -190,13 +190,16 @@ const checkItem = function (assetList, asset, validCb, invalidCb) {
     'use strict';
     let assetOk = true;
     _.map(assetList, (checkAsset) => {
-        assetOk = assetOk &&
-            !areAssetsIntersecting(
-                asset,
-                checkAsset,
-                _.noop,
-                _.noop
-            );
+        const check = areAssetsIntersecting(
+            asset,
+            checkAsset,
+            _.noop,
+            _.noop
+        );
+
+        if (check) {
+            assetOk = false;
+        }
     });
 
     _.invoke(assetOk ? validCb : invalidCb);
@@ -212,12 +215,12 @@ const checkItem = function (assetList, asset, validCb, invalidCb) {
  */
 const getAssetCorners = function (asset) {
     'use strict';
-    const left = asset.left || 0;
-    const top = asset.top || 0;
-    const width = asset.width || 0;
-    const height = asset.height || 0;
-    const rotation = asset.rotation || 0;
-    const scale = asset.scale || 0;
+    const left = parseFloat(asset.left || 0);
+    const top = parseFloat(asset.top || 0);
+    const width = parseFloat(asset.width || 0);
+    const height = parseFloat(asset.height || 0);
+    const rotation = parseFloat(asset.rotation || 0);
+    const scale = parseFloat(asset.scale || 0);
     const center = {
         x: left + width / 2,
         y: top + height / 2
