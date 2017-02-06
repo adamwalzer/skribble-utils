@@ -190,9 +190,7 @@ var checkItem = function (assetList, asset, validCb, invalidCb) {
     _.map(assetList, (checkAsset) => {
         var check = areAssetsIntersecting(
             asset,
-            checkAsset,
-            _.noop,
-            _.noop
+            checkAsset
         );
 
         if (check) {
